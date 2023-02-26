@@ -1,0 +1,627 @@
+:root {
+    --main-color: rgb(86,136,216);
+    --secondary-color: rgb(138,75,211);
+}
+.css-transitions-only-after-page-load * {
+    opacity: 0;
+  }
+html, body {
+    overscroll-behavior: none;
+    
+}
+#main {
+    box-sizing: content-box;
+
+}
+body {
+    margin: 0px;
+    background-color:white;
+    font-family: "Proxima Nova";
+    scroll-behavior: smooth;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.2s all;
+}
+body > * {
+    font-family: "Proxima Nova";
+}
+
+
+.logo {
+
+ background-image: url(hui.png);
+ background-size: contain;
+ height: 52px;
+ width: 52px;
+ margin: 0px ;
+ 
+
+}
+
+.elementMain {
+    background: var(--main-color);
+    background: linear-gradient(180deg, var(--main-color) 0%, var(--secondary-color) 100%);
+    margin: 0px;
+    color: white;
+    font-family: "Proxima Nova";
+    border-radius: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 220px ;
+    transition: all 1s;
+    overflow: hidden;
+    padding-top: 16px;
+    position: relative;
+
+    
+    
+
+}
+.elementMainExtended {
+    height:700px ;
+    transition: all 1s;
+    position: relative;
+
+
+}
+.navbarCont {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 65px;
+}
+
+
+#promptQuestion {
+    font-size: 32px;
+    
+}
+
+.titleText {
+    font-style: none;
+    text-decoration: none;
+    font-family: "Proxima Nova";
+    margin: 0px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 16px;
+    
+    
+}
+.titleText >* {
+    font-style: none;
+    text-decoration: none;
+    color: #9E9E9E;
+    letter-spacing: 2px;
+    font-family:"Proxima Nova Extrabold";
+    
+    
+}
+.formField {
+    position: relative;
+    
+}
+
+.surveyButton {
+    width: 200px;
+    height: 55px;
+    background-color: white;
+    color: rgba(138,75,211,1);
+    border-radius: 15px;
+    border: 0px solid;
+    outline: none;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Proxima Nova";
+    transition: all 0.2s;
+    
+}
+.surveyButton:hover {
+    filter: brightness(0.8);
+    transition: 0.2s all;
+
+    
+}
+.buttoncontainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 12px;
+}
+.textInput {
+    border-radius: 10px;
+    border: 0px solid black;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 32px;
+    resize: none;
+    font-family: "Proxima Nova";
+    transition: all 1s;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    
+}
+
+.textInput:focus {
+    border: 0px solid black;
+    outline: none;
+
+}
+.textInput + label {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    transition: 0.2s all;
+    font-size: large;
+    color: rgba(138,75,211,1);
+    font-weight: 500;
+}
+.textInput:focus + label {
+    font-size: smaller;
+    top: -20px;
+    transition: 0.2s all;
+    color: white;
+
+}
+
+.textInput:not(:placeholder-shown) + label {
+    font-size: smaller;
+    top: -20px;
+    transition: 0.2s all;
+    color: white;
+}
+
+.textInput + label.has-text {
+    font-size: smaller;
+    top: -20px;
+    transition: 0.2s all;
+}
+
+
+label {
+    color: black;
+    font-family: "Proxima Nova";
+}
+
+.chipscontainer {
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px;
+    box-shadow: 1px 1px 3px 1px rgba(34, 60, 80, 0.25);
+    width: fit-content;
+    display: inline-block;
+    margin: 8px;
+    margin-top: 0px;
+    border: 0px solid;
+    /* effects */
+    position: relative;
+    background-image: linear-gradient();
+    z-index: 1;
+    transition: 0.2s all;
+    background: linear-gradient(180deg, white 0%, white 0%);
+    
+
+
+}
+.chipscontainer > a {
+    text-decoration: none;
+    color: black;
+    font-family: "Comfortaa";
+    font-size: 14px;
+    transition: 0.2s all;
+    padding: 8px;
+    
+}
+
+.chipscontainer::before {
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px;
+    box-shadow: 1px 1px 3px 1px rgba(34, 60, 80, 0.25);
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to left,
+      var(--main-color),
+      var(--secondary-color)
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+
+}
+.chipscontainer:hover::before {
+    transition: 0.2s all;
+    opacity: 1;
+}
+.chipscontainer:hover a {
+    transition: 0.2s all;
+    color: white;
+}
+.chatbotcaption {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 8px;
+    margin-top: 16px;
+    margin-bottom: -16px
+}
+.chatbotcaption > p {
+    margin-left: 8px;
+}
+
+.surveyInput:focus {
+    border: 0px solid black;
+    outline: none;
+}
+
+
+
+.fakeDiv {
+    width: 52px;
+    height: 54px;
+}
+
+rect {
+    background-color: white;
+}
+
+
+.newsCaption {
+    color: #9E9E9E;
+    font-family:"Proxima Nova";
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin: 0px;
+    
+}
+/* SLIDER CSS SHIT */
+
+/* END OF SLIDER CSS SHIT */
+/* NAVBAR ANIMATION SHIT START */
+
+/* remove either div border or button border */
+/* menuIcon = div, hamburger = svg, hamburgerbutton = button */
+.hamburgerbutton {
+    background: transparent;
+    border-radius: 1rem;
+    border-radius: 10px;
+    border: 0px solid white;
+    cursor: pointer;
+    z-index: 15;
+    transform: translateZ(20px);
+    height: 52px
+    
+    /* position: fixed; */
+    
+    ;
+    
+
+}
+.hamburgerbutton .line {
+    transition: y 600ms ease, rotate 600ms ease,fill  600ms ease;
+    transform-origin: center;
+
+}
+.hamburgerbutton[aria-expanded="true"] .line {
+    y: 45px;
+    rotate: 45deg;
+    
+}
+.hamburgerbutton[aria-expanded="true"] .second {
+    rotate: -45deg;
+}
+
+/* NAVBAR ANIMATION SHIT END */
+
+
+
+#lesson {
+    font-family:"Proxima Nova";
+    font-weight: 800;
+    color: #9E9E9E;
+    font-size: 32px;
+    margin: 0px;
+    mix-blend-mode: multiply;
+}
+#sched {
+    font-family:"Proxima Nova";
+    font-weight: 800;
+    color: #9E9E9E;
+    margin: 2px;
+    
+
+}
+#remaining {
+    font-family:"Proxima Nova";
+    font-weight: 800;
+    color: #9E9E9E;
+
+}
+
+#lessonTimeContainer {
+    
+    padding: 8px;
+    width:calc(100% - 16    px);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 32px;
+    border-radius: 16px;
+    height: 56px;
+    overflow: hidden;
+    position: relative;
+}
+#lessonTimeContainer::before {
+    
+    
+    overflow: hidden;
+    content: " ";
+    position: absolute;
+    margin-left: -8px;
+    height: 1px;
+    width: calc(var(--before-width) - 48px);
+    background-color: inherit;
+    background-color: rgba(138,75,211,0.75);
+    border-radius: 16px;
+    padding: 2px;
+    z-index: -9;
+    /* the width of the element will be defined by both the padding and the width */
+    transition: all 1s;
+    bottom: 0;
+    
+
+}
+
+.nav-user-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+color: #9E9E9E;
+}
+.nav-user-wrapper h3 {
+    margin-right: 5px;
+}
+.nav-user-wrapper a {
+    color: #9E9E9E;
+    text-decoration: none;
+}
+  footer {
+    margin-top: 100px;
+    background-color: #EFEFEF;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+  }
+
+  footer h1 {
+    font-size: 24px;
+    margin: 0px;
+
+  }
+  footer h2 {
+    font-size: 14px;
+    margin: 0px;
+  }
+  #footer-textcont1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+
+  }
+  #footer-cont1 {
+    display: flex;
+    justify-content: left;
+  }
+  #footer-socials {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+  }
+  @keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        visibility: hidden;
+    }
+    to   { 
+        opacity: 1;
+        visibility: visible;
+    
+    }
+  }
+  
+  @keyframes fadeOut {
+    from { 
+        opacity: 1;
+        visibility: visible;
+    }
+    to   { 
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
+  
+  .nav-menu {
+    right: 20px;
+    top: 70px;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: top 0.5s;
+    animation: fadeOut 0.5s forwards;
+    z-index: 100;
+    background-color: white;
+    padding-left: 0px;
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    text-align: left;
+    width: 150px;
+    border-radius: 15px;
+    
+    
+  }
+  .hidething {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+  }
+  .nav-menu a {
+    display: block;
+    width: 83%;
+    list-style-type: none;
+    text-decoration: none;
+    color: #9E9E9E;
+    text-align: left;
+    padding: 10px;
+    margin-left: 2px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+  .nav-menu a:hover {
+    transition: 0.2s all;
+    background-color: rgba(0,0,0,.2)
+  }
+  .nav-menu.show {
+    right: 20px;
+    top: 60px;
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+    animation: fadeIn 0.5s forwards;
+    transition: top 0.5s;
+    z-index: 100;
+  }
+  #nav-menu hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: red ; 
+    opacity: 0;
+}
+  #nav-menu hr:first-of-type {
+    margin-top: 0px;
+  }
+  #nav-menu hr:last-of-type {
+    margin-bottom: 0px;
+    
+  }
+
+
+/* //////////////// */
+/* MEDIA QUERIES   */
+/* //////////////// */
+@media only screen and (max-width:617px) {
+
+    body {
+        margin: 0px;
+        background-color:white;
+        font-family: "Proxima Nova";
+        scroll-behavior: smooth;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px; 
+        transition: 0.2s all;
+    }
+    
+    #lesson {
+        font-size: 30px ;
+        transition: 0.2s all;
+    }
+    #promptQuestion {
+        font-size: 30px;
+        height: 78px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        transition: 0.2s all;
+    }
+    .elementMainExtended {
+        height:700px ;
+        transition: all 1s;
+        position: relative;
+    
+    
+    }
+    
+}
+@media only screen and (max-width:543px) {
+    #promptQuestion {
+        font-size: 28px;
+        height: 78px;
+        margin-bottom: 47px;
+    }
+    #lesson {
+        font-size: 26px ;
+        transition: 0.2s all;
+    }
+    .elementMain {
+    background: var(--main-color);
+    background: linear-gradient(180deg, var(--main-color) 0%, var(--secondary-color) 100%);
+    margin: 0px;
+    color: white;
+    font-family: "Proxima Nova";
+    border-radius: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 236px ;
+    transition: all 1s;
+    overflow: hidden;
+    padding-top: 16px;
+    position: relative;
+    
+    }
+    .elementMainExtended {
+        height:700px ;
+        transition: all 1s;
+        position: relative;
+    
+    
+    }
+
+
+}
+@media only screen and (max-width:316px) {
+    
+    #lesson {
+        font-size: 26px ;
+        transition: 0.2s all;
+    }
+    #promptQuestion {
+        font-size: 23px;
+        height: 78px;
+        
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+footer h2 {
+    display: none;
+}
+footer h1 {
+    font-size: 16px;
+
+}
+}
