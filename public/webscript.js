@@ -99,7 +99,7 @@
                 }
                 var text = ""
                 if (eventNames[i]==undefined) {
-                  text = "Free Time";
+                  text = "Уроки закончились! 🎉";
               } else {
                   text = eventNames[i];
               }
