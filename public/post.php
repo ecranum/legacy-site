@@ -160,7 +160,7 @@ if ($prev_post_result->num_rows > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
-    <link rel="icon" href="chatbot.png">
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="viewingpost.css">
     <link rel="stylesheet" href="player.css">
     <title>Просмотр</title>

@@ -27,7 +27,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   <meta property="og:image" content="https://my.school1409.ru/public/logo.png">
 
 <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
-<link rel="icon" href="chatbot.png">
+<link rel="icon" href="logo.png">
 <link rel="stylesheet" href="temp.css">
 <title>MY1409</title>
 </head>

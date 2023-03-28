@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
     <title>Create New Post</title>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="forms.css">
     <style type="text/css">
     </style>
