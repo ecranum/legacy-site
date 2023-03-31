@@ -135,7 +135,8 @@
             }
             }
             function updateLink(link) {
-              if (link != undefined) {
+              if (link != undefined && link != "" && link != " " ) {
+              
               document.getElementById("linkbtn").style.visibility = "visible"
               document.getElementById("watchstream").href = link
               document.getElementById("watchstream").innerText = "Смотреть"
